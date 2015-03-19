@@ -1,6 +1,3 @@
-<?php
-header('Content-Type: text/html; charset=utf-8');
-?>
 
 <!DOCTYPE html> 
 <html> 
@@ -29,15 +26,277 @@ header('Content-Type: text/html; charset=utf-8');
 
                     <!--K-->
 
-                    <li><a href="#foo3">Kokosmilchsuppe mit roten Curry und roten Linsen</a></li>
-
+                    <li><a href="#foo3">Kokosmilchsuppe mit roten Curry und roten Linsen</a></li>                    
+    
                     <!--P-->
                     <li><a href="#foo2">Pasta all'arrabbiata</a></li>
+                    
+                    <!--Q-->
+                    <li><a href="#foo5">Quiche Lorraine</a></li>
+                    
+                    <!--T-->
+                    <li><a href="#foo4">Tomaten Kokossuppe</a></li>
+
 
 
                 </ul>
             </div>
         </div>    
+<!--        <div data-role="page" id="foo4">
+            <div data-role="header" id="hf004" data-theme="b" data-position="fixed"> 
+                <a href="#"  data-rel="back" class="ui-btn-left ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-left ui-icon-back">Back</a>
+                <h1>Tomaten Kokossuppe</h1>
+            </div>
+            <h4 class="ui-bar ui-bar-a" style="margin-bottom:0px;">Tomaten Kokossuppe</h4>
+            <div data-role="content">
+                <h3 class="ui-bar ui-bar-a ui-corner-all">Zutaten</h3>
+                <table data-role="table" id="table-column-toggle" data-mode="columntoggle:none" class="ui-body-d ui-shadow ui-corner-all ui-responsive table-stroke table-strips">
+                    <tbody>  
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td><img src="penny.png" style="width:25px; height:25px;"></td>
+                        </tr>                        
+                    </tbody>
+                </table>
+            </div>
+            <div data-role="content">
+                <h3 class="ui-bar ui-bar-a ui-corner-all">Zubereitung</h3>
+                <table data-role="table" id="table-column-toggle" data-mode="columntoggle:none" class="ui-body-d ui-shadow ui-corner-all ui-responsive table-stroke table-strips">
+                    <tbody>                        
+                        <tr>
+                            <td></td>
+                            <td></td>
+                        </tr>                        
+                    </tbody>
+                </table>
+            </div>            
+        </div>-->
+        <div data-role="page" id="foo5">
+            <div data-role="header" id="hf005" data-theme="b" data-position="fixed"> 
+                <a href="#"  data-rel="back" class="ui-btn-left ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-left ui-icon-back">Back</a>
+                <h1>Quiche Lorraine</h1>
+            </div>
+            <h4 class="ui-bar ui-bar-a" style="margin-bottom:0px;">Quiche Lorraine</h4>
+            <div data-role="content">
+                <h3 class="ui-bar ui-bar-a ui-corner-all">Zutaten</h3>
+                <table data-role="table" id="table-column-toggle" data-mode="columntoggle:none" class="ui-body-d ui-shadow ui-corner-all ui-responsive table-stroke table-strips">
+                    <tbody>  
+                        <tr>
+                            <td>6</td>
+                            <td>Eier</td>
+                            <td><img src="penny.png" style="width:25px; height:25px;"></td>
+                        </tr>
+                        <tr>
+                            <td>300 g</td>
+                            <td>gewürfeltes Dürrfleisch/Schinken</td>
+                            <td><img src="penny.png" style="width:25px; height:25px;"></td>
+                        </tr>
+                        <tr>
+                            <td>300 g</td>
+                            <td>geriebener Emmentaler</td>
+                            <td><img src="penny.png" style="width:25px; height:25px;"></td>
+                        </tr>
+                        <tr>
+                            <td>200 g</td>
+                            <td>Creme Fraiche</td>
+                            <td><img src="penny.png" style="width:25px; height:25px;"></td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>Blätterteig (Kühlregal)</td>
+                            <td><img src="rewe.png" style="width:25px; height:25px;"></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>Salz & Pfeffer</td>
+                            <td><img src="penny.png" style="width:25px; height:25px;"></td>
+                        </tr>
+                        <tr>
+                            <td>1 Pri.</td>
+                            <td>Muskatnuß (Ostmann)</td>
+                            <td><img src="rewe.png" style="width:25px; height:25px;"></td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>Tarteform</td>
+                            <td><img src="rewe.png" style="width:25px; height:25px;"></td>
+                        </tr>
+                        
+                    </tbody>
+                </table>
+            </div>
+            <div data-role="content">
+                <h3 class="ui-bar ui-bar-a ui-corner-all">Zubereitung</h3>
+                <table data-role="table" id="table-column-toggle" data-mode="columntoggle:none" class="ui-body-d ui-shadow ui-corner-all ui-responsive table-stroke table-strips">
+                    <tbody>     
+                        <tr>
+                            <td>1</td>
+                            <td>Backofen auf 180°C Umluft aufheitzen</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Tarteform mit kalten Wasser ausspühlen und mit Blätterteig auslegen</td>                            
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Eiweiß und Eigelb trennen und in seperate Schüsseln geben</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>Eiweiß für ca. 5 Min mit der Rührmaschine bei voller Leistung zu steifem Eischnee schlagen</td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>1 EL. Wasser zum Eigelb geben und für ca. 5 Min. mit der Rührmaschine bei voller Leistung schaumig rühren</td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td>gute Prise Salz, Pfeffer, Muskatnuß, Dürrfleisch und Creme Fraiche zum schaumigen Eigelb geben und verrühren</td>
+                        </tr>
+                        <tr>
+                            <td>7</td>
+                            <td>Emmentaler nach und nach zu geben und verrühren</td>
+                        </tr>
+                        <tr>
+                            <td>8</td>
+                            <td>Eischnee nach und nach locker unterheben</td>
+                        </tr>
+                        <tr>
+                            <td>9</td>
+                            <td>Mischung in die mit Blätterteig ausgelegte Tarte geben und gleichmäßig verteilen</td>
+                        </tr>
+                        <tr>
+                            <td>10</td>
+                            <td>für 30-40 Min. in den Backofen geben</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>            
+        </div>
+        <div data-role="page" id="foo4">
+            <div data-role="header" id="hf004" data-theme="b" data-position="fixed"> 
+                <a href="#"  data-rel="back" class="ui-btn-left ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-left ui-icon-back">Back</a>
+                <h1>Tomaten Kokossuppe</h1>
+            </div>
+            <h4 class="ui-bar ui-bar-a" style="margin-bottom:0px;">Tomaten Kokossuppe</h4>
+            <div data-role="content">
+                <h3 class="ui-bar ui-bar-a ui-corner-all">Zutaten</h3>
+                <table data-role="table" id="table-column-toggle" data-mode="columntoggle:none" class="ui-body-d ui-shadow ui-corner-all ui-responsive table-stroke table-strips">
+                    <tbody>  
+                        <tr>
+                            <td>2</td>
+                            <td>Frühlingszwiebeln</td>
+                            <td><img src="penny.png" style="width:25px; height:25px;"></td>
+                        </tr>
+                        <tr>
+                            <td>3 El</td>
+                            <td>neutrales Pflanzenöl</td>
+                            <td><img src="penny.png" style="width:25px; height:25px;"></td>
+                        </tr>
+                        <tr>
+                            <td>500 g</td>
+                            <td>passierte Tomaten (Tetrapak)</td>
+                            <td><img src="penny.png" style="width:25px; height:25px;"></td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>Kaffirlimettenblätter</td>
+                            <td><img src="asia.png" style="width:25px; height:25px;"></td>
+                        </tr>
+                        <tr>
+                            <td>1 Prs.</td>
+                            <td>Salz</td>
+                            <td><img src="penny.png" style="width:25px; height:25px;"></td>
+                        </tr>
+                        <tr>
+                            <td>1 Prs</td>
+                            <td>Cayennepfeffer</td>
+                            <td><img src="rewe.png" style="width:25px; height:25px;"></td>
+                        </tr>
+                        <tr>
+                            <td>250 ml</td>
+                            <td>Kokosmilch</td>
+                            <td><img src="penny.png" style="width:25px; height:25px;"></td>
+                        </tr>
+                        <tr>
+                            <td>1 Tl</td>
+                            <td>Zucker</td>
+                            <td><img src="penny.png" style="width:25px; height:25px;"></td>
+                        </tr>
+                        <tr>
+                            <td>100 g</td>
+                            <td>Räuchertofu</td>
+                            <td><img src="rewe.png" style="width:25px; height:25px;"></td>
+                        </tr>
+                        <tr>
+                            <td>1 EL + 1 Tl</td>
+                            <td>Speisestärke</td>
+                            <td><img src="penny.png" style="width:25px; height:25px;"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div data-role="content">
+                <h3 class="ui-bar ui-bar-a ui-corner-all">Zubereitung</h3>
+                <table data-role="table" id="table-column-toggle" data-mode="columntoggle:none" class="ui-body-d ui-shadow ui-corner-all ui-responsive table-stroke table-strips">
+                    <tbody>                        
+                        <tr>
+                            <td>1</td>
+                            <td>Frühlingszwiebeln putzen. Weiße und grüne Teile getrennt in dünne Ringe schneiden</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>im Suppentopf 1 EL Öl erhitzen und das Weiße der Frühlingszweibeln darin bei mittlerer Hitze ca 3 Mi. glasig werden lassen</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>passierte Tomaten zugeben und aufkochen</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>Limettenblätter waschen, trocken tupfen, mehrmals einreisen und zusammen mit den Kokosmilch in den Topf geben</td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>alles mit Salz, Cayennepfeffer und Zucker würzen</td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td>alles einmal aufkochen und dann bei kleiner Hitze offen ca. 10 Min.kochen</td>
+                        </tr>
+                        <tr>
+                            <td>7</td>
+                            <td>Tofu in ca. 2cm groß würfeln und in 1El. Speisestärke wenden</td>
+                        </tr>
+                        <tr>
+                            <td>8</td>
+                            <td>in einer Pfanne das restliche Öl erhitzen und die Tofuwürfel darin bei starker Hitze in ca. 5 Min. goldbraun und knusprig braten</td>
+                        </tr>
+                        <tr>
+                            <td>9</td>
+                            <td>Tofuwürfel aus der Pfanne nehmen und auf Küchenpapier entfetten</td>
+                        </tr>
+                        <tr>
+                            <td>10</td>
+                            <td>die Limettenblätter aus dem Topf fischen</td>
+                        </tr>
+                        <tr>
+                            <td>11</td>
+                            <td>1 Tl. Speisestärke mit 2 El. kalten Wasser verrühren, in die Suppe geben und noch einmal aufkochen</td>
+                        </tr>
+                        <tr>
+                            <td>12</td>
+                            <td>die Suppe mit Salz, Cayennepfeffer und Zucker abschmecken</td>
+                        </tr>
+                        <tr>
+                            <td>13</td>
+                            <td>zum Servieren in tiefe Schalen füllen und mit den Tofwürfeln und den rohen grünen Frühlingszwiebelringen bestreuen</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>            
+        </div>
 
         <div data-role="page" id="foo1">
             <div data-role="header" id="hf001" data-theme="b" data-position="fixed"> 
