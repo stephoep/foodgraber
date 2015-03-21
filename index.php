@@ -1,4 +1,7 @@
-
+<?php
+require_once 'libphp/functions.php';
+activity_protocol();
+?>
 <!DOCTYPE html> 
 <html> 
     <head> 
@@ -20,7 +23,8 @@
             </div>
             <div data-role="content">
                 <ul data-role="listview" data-autodividers="true" data-filter="true" data-inset="true">
-
+                    
+                                  
                     <!--F-->
                     <li><a href="#foo1">Flammenkuchen mit Blattspinat</a></li>
 
@@ -33,6 +37,9 @@
                     
                     <!--Q-->
                     <li><a href="#foo5">Quiche Lorraine</a></li>
+                    
+                    <!--S-->
+                    <li><a href="#foo6">Spaghetti Bolognese</a></li>
                     
                     <!--T-->
                     <li><a href="#foo4">Tomaten Kokossuppe</a></li>
@@ -72,6 +79,126 @@
                 </table>
             </div>            
         </div>-->
+
+        <div data-role="page" id="foo6">
+            <div data-role="header" id="hf006" data-theme="b" data-position="fixed"> 
+                <a href="#"  data-rel="back" class="ui-btn-left ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-left ui-icon-back">Back</a>
+                <h1>Spaghetti Bolognese</h1>
+            </div>
+            <h4 class="ui-bar ui-bar-a" style="margin-bottom:0px;">Spaghetti Bolognese</h4>
+            <div data-role="content">
+                <h3 class="ui-bar ui-bar-a ui-corner-all">Zutaten</h3>
+                <table data-role="table" id="table-column-toggle" data-mode="columntoggle:none" class="ui-body-d ui-shadow ui-corner-all ui-responsive table-stroke table-strips">
+                    <tbody>  
+                        <tr>
+                            <td>150 ml</td>
+                            <td>Rotwein</td>
+                            <td><img src="penny.png" style="width:25px; height:25px;"></td>
+                        </tr>
+                        <tr>
+                            <td>300 g</td>
+                            <td>gemischtes Hackfleisch</td>
+                            <td><img src="penny.png" style="width:25px; height:25px;"></td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Dosen gestückelte Tomaten (Oro di Parma)</td>
+                            <td><img src="penny.png" style="width:25px; height:25px;"></td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Zwiebeln</td>
+                            <td><img src="penny.png" style="width:25px; height:25px;"></td>
+                        </tr>
+                        <tr>
+                            <td>1/2</td>
+                            <td>Gemüsebrühwürfel</td>
+                            <td><img src="penny.png" style="width:25px; height:25px;"></td>
+                        </tr>
+                        <tr>
+                            <td>1 El.</td>
+                            <td>Senf</td>
+                            <td><img src="penny.png" style="width:25px; height:25px;"></td>
+                        </tr>
+                        <tr>
+                            <td>300 g</td>
+                            <td>Penne</td>
+                            <td><img src="penny.png" style="width:25px; height:25px;"></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>Rosmarien Gewürz</td>
+                            <td><img src="penny.png" style="width:25px; height:25px;"></td>
+                        </tr>
+                        <tr>
+                            <td>4 El.</td>
+                            <td>Olivenöl</td>
+                            <td><img src="penny.png" style="width:25px; height:25px;"></td>
+                        </tr>
+                        <tr>
+                            <td>1/2 El.</td>
+                            <td>Honig</td>
+                            <td><img src="penny.png" style="width:25px; height:25px;"></td>
+                        </tr>                        
+                    </tbody>
+                </table>
+            </div>
+            <div data-role="content">
+                <h3 class="ui-bar ui-bar-a ui-corner-all">Zubereitung</h3>
+                <table data-role="table" id="table-column-toggle" data-mode="columntoggle:none" class="ui-body-d ui-shadow ui-corner-all ui-responsive table-stroke table-strips">
+                    <tbody>                        
+                        <tr>
+                            <td>1</td>
+                            <td>Nudelwasser zum kochen bringen und salzen</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Zwiebeln grob würfeln</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Olivenöl in der Pfanne erhitzen</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>Zwiebeln zugeben und andünsten</td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>Hackfleisch zugeben und anbraten. Zu große Hackfleischstücke mit einer Gabel zerdrücken</td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td>Penne ins Nudelwasser geben</td>
+                        </tr>
+                        <tr>
+                            <td>7</td>
+                            <td>mit Salz, Peffer und Rosmarien würzen</td>
+                        </tr>
+                        <tr>
+                            <td>8</td>
+                            <td>mit Rotwein ablöschen</td>
+                        </tr>
+                        <tr>
+                            <td>9</td>
+                            <td>gestückelte Tomaten zugeben</td>
+                        </tr>
+                        <tr>
+                            <td>10</td>
+                            <td>1 El. Senf und 1/2 El. Honig zugeben</td>
+                        </tr>
+                        <tr>
+                            <td>11</td>
+                            <td>bei mittlere Hitze 10 Min. kochen</td>
+                        </tr>
+                        <tr>
+                            <td>12</td>
+                            <td>eventl. mit Brühe nachwürzen</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>            
+        </div>
         <div data-role="page" id="foo5">
             <div data-role="header" id="hf005" data-theme="b" data-position="fixed"> 
                 <a href="#"  data-rel="back" class="ui-btn-left ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-left ui-icon-back">Back</a>
