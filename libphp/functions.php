@@ -1,4 +1,14 @@
 <?php
+
+function security($var){
+    
+    $var = trim($var);
+    $var = mysql_real_escape_string($var);
+    $var = htmlspecialchars($var);
+    
+    return $var;
+}
+
 function get_client_ip(){
     
     $ipaddress = '';
