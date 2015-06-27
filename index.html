@@ -13,22 +13,19 @@
             //   the current GPS coordinates
             //
             function onSuccess(position) {
-                var element = document.getElementById('geolocation');
-                element.innerHTML = 'Latitude: '  + position.coords.latitude      + '<br />' +
-                                    'Longitude: ' + position.coords.longitude     + '<br />' +
-                                    '<hr />'      + element.innerHTML;
+                
+                alert('Latitude: '  + position.coords.latitude + '\n' +'Longitude: ' + position.coords.longitude);
             }
-
-            // onError Callback receives a PositionError object
-            //
+            
             function onError(error) {
                 alert('code: '    + error.code    + '\n' +
                       'message: ' + error.message + '\n');
             }
-
-            // Options: throw an error if no update is received every 30 seconds.
-            //
-            var watchID = navigator.geolocation.watchPosition(onSuccess, onError, { timeout: 30000 });
+            
+            $( document ).ready(function() {
+                alert('hallo');
+                var watchID = navigator.geolocation.watchPosition(onSuccess, onError, { timeout: 30000 });
+            });
         </script>
         <style>
             /*.ui-page{background: transparent url('img/repeat_background.png');}*/
