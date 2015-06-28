@@ -8,24 +8,39 @@
         <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
         <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
         <script>
-            // onSuccess Callback
-            //   This method accepts a `Position` object, which contains
-            //   the current GPS coordinates
-            //
-            function onSuccess(position) {
-                
-                alert('Latitude: '  + position.coords.latitude + '\n' +'Longitude: ' + position.coords.longitude);
-            }
-            
+            var onSuccess = function(position) {
+                            alert('Latitude: '          + position.coords.latitude          + '\n' +
+                                  'Longitude: '         + position.coords.longitude         + '\n' +
+                                  'Altitude: '          + position.coords.altitude          + '\n' +
+                                  'Accuracy: '          + position.coords.accuracy          + '\n' +
+                                  'Altitude Accuracy: ' + position.coords.altitudeAccuracy  + '\n' +
+                                  'Heading: '           + position.coords.heading           + '\n' +
+                                  'Speed: '             + position.coords.speed             + '\n' +
+                                  'Timestamp: '         + position.timestamp                + '\n');
+                    };
+        
             function onError(error) {
-                alert('code: '    + error.code    + '\n' +
-                      'message: ' + error.message + '\n');
+                alert('code: '      + error.code    + '\n' +
+                      'message: '   + error.message + '\n');
             }
             
-            $( document ).ready(function() {
-                alert('hallo');
-                var watchID = navigator.geolocation.watchPosition(onSuccess, onError, { timeout: 30000 });
+            function alertTest(){
+                alert('geht');
+            };
+                    
+            function exeGeo(){
+                navigator.geolocation.getCurrentPosition(onSuccess, onError);
+            };
+            
+            $(document).ready( function(){
+                $('#geoEXE').click(function(){
+                    exeGeo();
+                });
+                $('#alertEXE').click(function(){
+                    alertTest();
+                });
             });
+             
         </script>
         <style>
             /*.ui-page{background: transparent url('img/repeat_background.png');}*/
@@ -38,7 +53,8 @@
             </div>
             
                 <ul data-role="listview" data-autodividers="true" data-filter="true" data-inset="true">
-
+                    <li><button id="geoEXE">exeGeo</button></li>
+                    <li><button id="alertEXE">alert</button></li>
                     <!--C-->
                     <li><a href="recipes/ChiliConCarne.php">Chili con Carne</a></li>
                     <!--D-->   
