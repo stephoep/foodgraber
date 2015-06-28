@@ -7,38 +7,29 @@
         <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
         <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
         <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
-        <script>
-            var onSuccess = function(position) {
-                            alert('Latitude: '          + position.coords.latitude          + '\n' +
-                                  'Longitude: '         + position.coords.longitude         + '\n' +
-                                  'Altitude: '          + position.coords.altitude          + '\n' +
-                                  'Accuracy: '          + position.coords.accuracy          + '\n' +
-                                  'Altitude Accuracy: ' + position.coords.altitudeAccuracy  + '\n' +
-                                  'Heading: '           + position.coords.heading           + '\n' +
-                                  'Speed: '             + position.coords.speed             + '\n' +
-                                  'Timestamp: '         + position.timestamp                + '\n');
-                    };
-        
-            function onError(error) {
-                alert('code: '      + error.code    + '\n' +
-                      'message: '   + error.message + '\n');
-            }
+        <script>            
             
-            function alertTest(){
-                alert('geht');
-            };
-                    
-            function exeGeo(){
-                navigator.geolocation.getCurrentPosition(onSuccess, onError);
-            };
+            function onSuccess(position) {
+                $('#geolocation').append(
+                '<p>' + 'Latitude:  ' + position.coords.latitude      + '<br />' +
+                        'Longitude: ' + position.coords.longitude     + '</p>' 
+                );
+            }
+
+            function onError(error) {
+                $('#geolocation').append(
+                '<p>' + 'code: '    + error.code    + '<br />' +
+                        'message: ' + error.message + '</p>');
+            }
+
             
             $(document).ready( function(){
                 $('#geoEXE').click(function(){
-                    exeGeo();
+                    var watchID = navigator.geolocation.watchPosition(onSuccess, onError, { maximumAge: 30000, enableHighAccuracy: true });
                 });
-                $('#alertEXE').click(function(){
-                    alertTest();
-                });
+                
+                var watchID = navigator.geolocation.watchPosition(onSuccess, onError, { maximumAge: 30000, enableHighAccuracy: true });
+                alert(watchID);                
             });
              
         </script>
@@ -51,10 +42,12 @@
             <div data-role="header" id="headeroverview" data-theme="b" data-position="fixed"> 
                 <h1>foodgraber</h1>
             </div>
+            <div id="geolocation" data-role="content">
+                
+            </div>
             
                 <ul data-role="listview" data-autodividers="true" data-filter="true" data-inset="true">
                     <li><button id="geoEXE">exeGeo</button></li>
-                    <li><button id="alertEXE">alert</button></li>
                     <!--C-->
                     <li><a href="recipes/ChiliConCarne.php">Chili con Carne</a></li>
                     <!--D-->   
